@@ -134,14 +134,38 @@ namespace Weather
         private void strtext()
         {
             string str = textBox1.Text;
-            string check = "비";
+            string check1 = "비";
+            string check2 = "눈";
+            string check3 = "황사";
+            string check4 = "미세먼지";
+            string check5 = "강풍";
 
             Console.WriteLine(textBox1.Text);
 
-            if (str.Contains(check))
+            if (str.Contains(check1))
             {
-                Console.WriteLine("있음");
+                Console.WriteLine("비 있음");
                 label14.Text = "비가 내리니 우산을 챙기세요!";
+            }
+            else if (str.Contains(check2))
+            {
+                Console.WriteLine("눈 있음");
+                label14.Text = "눈이 내리니 빙판길 조심하세요!";
+            }
+            else if (str.Contains(check3))
+            {
+                Console.WriteLine("황사 있음");
+                label14.Text = "황사가 심하니 마스크를 챙기세요!";
+            }
+            else if (str.Contains(check4))
+            {
+                Console.WriteLine("미세먼지 있음");
+                label14.Text = "미세먼지가 심하니 마스크를 챙기세요!";
+            }
+            else if (str.Contains(check5))
+            {
+                Console.WriteLine("강풍 있음");
+                label14.Text = "바람이 심하게 부니 따뜻하게 입고 나가세요!";
             }
             else
             {                
